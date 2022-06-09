@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        @* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> *@
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="~/css/style.css">
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>This is the Home Page</h1>
+
+        <form action="method" method="post">
+            <div class="form-group">
+                <label>Name: </label>
+                <input type="text" name="Name"/>
+            </div>
+            <div class="form-group">
+                <label>Dojo Location: </label>
+                <select name="Location" id="Location">
+                    <option value="konoha">Konoha</option>
+                    <option value="eastblue">East Blue</option>
+                    <option value="gothamcity">Gotham City</option>
+                    <option value="pallettown">Pallet Town</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Favorite Language: </label>
+                <select name="Language" id="Language">
+                    <option value="csharp">C#</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">Javascript</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Comments (Optional): </label>
+                <textarea name="Comment" id="Comments" rows="4" cols="50"></textarea>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Press Start">
+        </form>
+    </body>
+</html>
